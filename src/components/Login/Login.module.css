@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,400;1,300&display=swap");
+
+.login {
+  position: relative;
+  width: 1920px;
+  height: 1080px;
+
+  background: linear-gradient(180deg, #33383d 0%, #1c1d20 100%);
+  box-shadow: 4px 4px 70px rgba(0, 0, 0, 0.25);
+}
+
+.login h1 {
+  position: absolute;
+  width: 273px;
+  height: 75px;
+  left: 296px;
+  top: 94px;
+
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 75px;
+  color: #e0e0e0;
+}
+
+.login p {
+  position: absolute;
+  width: 301px;
+  height: 24px;
+  left: 260px;
+  top: 195px;
+
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+
+  /* Secundária */
+
+  color: #e0e0e0;
+}
+
+.login input {
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 379px;
+  height: 60px;
+  left: 388px;
+  top: 266px;
+
+  background: #26292c;
+  border: 1px solid #ffffff;
+  border-radius: 50px;
+}
+
+.login label {
+  position: absolute;
+  width: 100px;
+  height: 24px;
+  left: 400px;
+  top: 280px;
+
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+
+  /* Secundária */
+
+  color: #e0e0e0;
+}

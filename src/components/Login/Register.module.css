@@ -113,13 +113,13 @@
   box-sizing: border-box;
   position: absolute;
   background: #26292c;
-  border: 1px solid #ffffff;
+  border: 2px solid #ffffff;
   border-radius: 50px;
   width: 379px;
   height: 60px;
   left: 388px;
   padding-left: 25px;
-  color: white;
+  color: gray;
 }
 
 .register input:nth-child(2) {
@@ -132,6 +132,13 @@
 
 .register input:nth-child(6) {
   top: 422px;
+}
+
+.register input[type="date"]::-webkit-calendar-picker-indicator {
+  position: absolute;
+  left: 115px;
+  background-size: 15px;
+  filter: invert(50%);
 }
 
 .register input:nth-child(8) {
@@ -195,4 +202,9 @@
   font-weight: 400;
   font-size: 22px;
   line-height: 20px;
+  text-decoration: underline;
+}
+
+.register p:hover {
+  color: wheat;
 }

@@ -1,6 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,400;1,300&display=swap");
-
 .login {
+  position: relative;
+  display: flex;
+  background: linear-gradient(180deg, #33383d 0%, #1c1d20 100%);
+  box-shadow: 4px 4px 70px rgba(0, 0, 0, 0.25);
+  color: #e0e0e0;
   position: relative;
   width: 1920px;
   height: 1080px;
@@ -9,27 +12,51 @@
   box-shadow: 4px 4px 70px rgba(0, 0, 0, 0.25);
 }
 
+.login img {
+  /* position: relative;
+  height: 100vh;
+  width: 50%;
+  top: 0px;
+  left: 50%; */
+  position: absolute;
+  width: 960px;
+  height: 1080px;
+  left: 960px;
+  top: 0px;
+}
+
 .login h1 {
   position: absolute;
-  width: 273px;
-  height: 75px;
-  left: 296px;
-  top: 94px;
+  width: 77px;
+  height: 38px;
+  left: 287px;
 
   font-family: "Mulish";
   font-style: normal;
   font-weight: 400;
-  font-size: 60px;
-  line-height: 75px;
+  font-size: 30px;
+  line-height: 38px;
+  /* identical to box height */
+
+  /* Secundária */
+
   color: #e0e0e0;
+}
+
+.login h1:nth-child(1) {
+  top: 197px;
+  font-size: 60px;
+}
+
+.login h1:nth-child(4) {
+  top: 477px;
 }
 
 .login p {
   position: absolute;
   width: 301px;
-  height: 24px;
-  left: 260px;
-  top: 195px;
+  height: 90px;
+  left: 287px;
 
   font-family: "Mulish";
   font-style: normal;
@@ -37,39 +64,71 @@
   font-size: 16px;
   line-height: 20px;
 
-  /* Secundária */
-
   color: #e0e0e0;
+}
+
+.login p:nth-child(2) {
+  top: 290px;
+}
+
+.login p:nth-child(4) {
+  top: 790px;
+  left: 380px;
+  text-decoration: underline;
 }
 
 .login input {
   box-sizing: border-box;
 
   position: absolute;
+  background: #26292c;
+  border: 2px solid #ffffff;
+  border-radius: 50px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #e0e0e0;
+  padding: 20px;
   width: 379px;
   height: 60px;
-  left: 388px;
-  top: 266px;
-
-  background: #26292c;
-  border: 1px solid #ffffff;
-  border-radius: 50px;
+  left: 285px;
 }
 
-.login label {
+.login input:nth-child(1) {
+  top: 547px;
+}
+
+.login input:nth-child(2) {
+  top: 630px;
+}
+
+.login button {
   position: absolute;
-  width: 100px;
-  height: 24px;
-  left: 400px;
-  top: 280px;
+  width: 379px;
+  height: 60px;
+  left: 285px;
+  top: 720px;
+
+  background: linear-gradient(90deg, #ff2d04 0%, #c13216 100%);
+  box-shadow: inset 5px 5px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 50px;
 
   font-family: "Mulish";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+  /* identical to box height */
 
   /* Secundária */
 
   color: #e0e0e0;
+  font-weight: 700;
+  font-size: 26px;
+  border: none;
+}
+
+.login button:hover {
+  background: linear-gradient(90deg, #6a1606 0%, #6f1a09 100%);
+  color: white;
 }

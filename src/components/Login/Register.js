@@ -3,6 +3,7 @@ import { Fragment } from "react";
 import { Alert } from "react-bootstrap";
 import styles from "./Register.module.css";
 import logoimage from "../../assets/logo.png";
+// import Home from "../Home/Home";
 import Login from "./Login";
 
 function Register() {
@@ -42,6 +43,10 @@ function Register() {
     }
   };
 
+  const handleClick = () => {
+    setLogin(!login);
+  };
+
   return (
     <Fragment>
       {login ? (
@@ -70,6 +75,7 @@ function Register() {
 
             <label htmlFor="date">Birth date</label>
             <input
+              className="styles.form-date__input"
               type="date"
               id="date"
               placeholder="dd / mm / yyyy"
@@ -78,7 +84,7 @@ function Register() {
 
             <label>Country</label>
             <input
-              type="text"
+              type="country"
               id="country"
               placeholder="Your Country"
               onChange={(event) => setCountry(event.target.value)}
@@ -86,7 +92,7 @@ function Register() {
 
             <label>City</label>
             <input
-              type="text"
+              type="city"
               id="city"
               placeholder="Your City"
               onChange={(event) => setCity(event.target.value)}
@@ -118,9 +124,18 @@ function Register() {
               placeholder="Confirm your password"
               onChange={(event) => setPassword2(event.target.value)}
             />
+
+            {/* check if password is the same */}
+            {password !== password2 && (
+              <div>
+                <Alert variant="danger">Passwords do not match</Alert>
+                <p>Passwords do not match</p>
+              </div>
+            )}
+
             <button type="submit">Register</button>
 
-            <p>Already registered {""} login in?</p>
+            <p onClick={handleClick}>Already registered {""} login in?</p>
 
             {flag && (
               <Alert color="primary" variant="danger">

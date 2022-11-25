@@ -36,7 +36,7 @@ function Register() {
       setFlag(false);
       localStorage.setItem("Email", JSON.stringify(email));
       localStorage.setItem("Password", JSON.stringify(password));
-      localStorage.setItem("FirstName", JSON.stringify(password2));
+      localStorage.setItem("Country", JSON.stringify(country));
 
       console.log("Saved In Local Storage");
       setLogin(!login);

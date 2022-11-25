@@ -1,26 +1,20 @@
 .task {
-  background-color: #fff;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 10px;
-  margin: 10px;
+  margin: 4vh;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .task input {
-  box-sizing: border-box;
+  position: relative;
 
-  position: absolute;
-  width: 370px;
-  height: 45px;
-  top: 185px;
-  padding: 10px;
-
-  background: #ffffff;
   border: 2px solid #fece00;
   border-radius: 10px;
+
+  width: 15vw;
+  height: 3.8vh;
+  left: 2vw;
+  margin-left: 1vh;
+  color: gray;
+  padding-left: 1vh;
 }
 
 .task input::placeholder {
@@ -28,21 +22,18 @@
   border-color: black;
 }
 
-.task input:nth-child(1) {
-  left: 45px;
-}
-
 .task select {
+  padding-left: 1vh;
   box-sizing: border-box;
-  position: absolute;
-  width: 370px;
-  height: 45px;
-  top: 185px;
-  padding: 10px;
+  position: relative;
 
-  background: #ffffff;
   border: 2px solid #fece00;
   border-radius: 10px;
+  margin-left: 2vh;
+
+  width: 15vw;
+  height: 4.5vh;
+  left: 2vw;
   color: gray;
 }
 
@@ -51,57 +42,39 @@
   border-color: black;
 }
 
-.task select:nth-child(2) {
-  left: 420px;
-}
-
-.task select:nth-child(3) {
-  width: 100px;
-  left: 795px;
-}
-
-.task select:nth-child(4) {
-  width: 100px;
-  left: 900px;
-}
-
 .task button {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 10px 12px;
-  gap: 4px;
 
-  position: absolute;
-  width: 200px;
-  height: 44px;
-
-  top: 185px;
+  position: relative;
 
   font-weight: 700;
   font-size: 20px;
   line-height: 20px;
+  margin-left: 1vw;
+  width: 10vw;
+  height: 4.5vh;
+  left: 25vw;
 
   border-radius: 10px;
   border: none;
   color: #ffffff;
 }
 
-.task button:nth-child(5) {
+.task button:nth-child(4) {
   background: #00ba88;
-  left: 1473px;
 }
 
-.task button:hover:nth-child(5) {
+.task button:nth-child(4):hover {
   background: #204e42;
 }
 
-.task button:nth-child(6) {
+.task button:nth-child(5) {
   background: #ff3d1f;
-  left: 1700px;
 }
 
-.task button:hover:nth-child(6) {
+.task button:hover:nth-child(5) {
   background: #a32a1b;
 }

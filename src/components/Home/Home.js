@@ -3,11 +3,11 @@ import Task from "./Task";
 import Header from "./Header";
 import Schedule from "./Schedule";
 
-// import styles from "./Home.module.css";
+import styles from "./Home.module.css";
 
 function Home() {
   return (
-    <div>
+    <div className={styles.home}>
       <Header />
       <Task />
       <Schedule />

@@ -1,0 +1,107 @@
+.task{
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task input{
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 370px;
+    height: 45px;
+    top: 185px;
+    padding: 10px;
+
+    background: #FFFFFF;
+    border: 1px solid #FECE00;
+    border-radius: 10px;
+}
+
+.task input::placeholder{
+    color: gray;
+    border-color: black;
+}
+
+.task input:nth-child(1){
+    left: 45px;
+}
+
+.task select{
+    box-sizing: border-box;
+    position: absolute;
+    width: 370px;
+    height: 45px;
+    top: 185px;
+    padding: 10px;
+
+    background: #FFFFFF;
+    border: 1px solid #FECE00;
+    border-radius: 10px;
+    color : gray;
+}
+
+.task select::placeholder{
+    color: gray;
+    border-color: black;
+}
+
+.task select:nth-child(2){
+    left: 420px;
+}
+
+.task select:nth-child(3){
+    width: 100px;
+    left: 795px;
+}
+
+.task select:nth-child(4){
+    width: 100px;
+    left: 900px;
+}
+
+.task button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 12px;
+    gap: 4px;
+    
+    position: absolute;
+    width: 200px;
+    height: 44px;
+
+    top: 185px;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    
+    background: #00BA88;
+    border-radius: 10px;
+    border: none;
+    color: #FFFFFF;
+}
+
+.task button:hover{
+    background: #204e42;
+}
+
+.task button:nth-child(5){
+    left: 1473px;
+}
+
+.task button:nth-child(6){
+    left: 1700px;
+}
+
+
+
+
+

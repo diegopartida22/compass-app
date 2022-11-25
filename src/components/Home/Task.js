@@ -27,6 +27,8 @@ function Task() {
     "11:00",
   ];
 
+  // const [selectedDay, setSelectedDay] = React.useState("Monday");
+  // const [selectedHour, setSelectedHour] = React.useState("12:00");
 
   // const tasks = [
   //   {
@@ -52,12 +54,10 @@ function Task() {
   //   },
   // ];
 
-
-
   return (
     <Fragment>
       <div className={styles.task}>
-        <input type="text" name="task" id="task" placeholder="Task or issue"/>
+        <input type="text" name="task" id="task" placeholder="Task or issue" />
 
         <select name="day" id="day">
           {days.map((day) => (
@@ -71,7 +71,7 @@ function Task() {
           {hours.map((hour) => (
             <option key={hour} value={hour}>
               {hour}
-            </option> 
+            </option>
           ))}
         </select>
 
@@ -83,7 +83,6 @@ function Task() {
         <button type="submit">+ Add Task</button>
 
         <button type="submit">- Delete All</button>
-
       </div>
     </Fragment>
   );

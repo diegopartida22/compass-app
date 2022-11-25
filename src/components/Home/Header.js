@@ -2,6 +2,7 @@ import React from "react";
 // import Hour from "../Date/Hour";
 import Day from "../Date/Day";
 import styles from "./Header.module.css";
+import Hour from "../Date/Hour";
 
 // create a header component
 
@@ -13,7 +14,9 @@ function Header() {
         <h2>Use this planner to organize your daily issues</h2>
       </div>
       <div>
-        <h3 className={styles.hour}>10:48</h3>
+        <h3 className={styles.hour}>
+          <Hour />
+        </h3>
       </div>
       <div className={styles.date}>
         <Day />

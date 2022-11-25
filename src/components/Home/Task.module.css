@@ -105,25 +105,3 @@
 .task button:hover:nth-child(6) {
   background: #a32a1b;
 }
-
-.days {
-  display: flex;
-  flex-direction: row;
-
-  padding: 10px 12px;
-  gap: 4px;
-
-  position: absolute;
-  width: 200px;
-  height: 44px;
-
-  top: 250px;
-
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 20px;
-
-  border-radius: 10px;
-  border: none;
-  color: black;
-}

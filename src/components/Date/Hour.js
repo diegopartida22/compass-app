@@ -1,12 +1,33 @@
 import React from "react";
 
-function Hour() {
-  return (
-    <div>
-      <h1>Current time is</h1>
-      <h1>Date</h1>
-    </div>
-  );
+class Clock extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      time: new Date().toLocaleString(navigator.language, {
+        hour: "2-digit",
+        minute: "2-digit",
+      }),
+    };
+  }
+  componentDidMount() {
+    this.intervalID = setInterval(() => this.tick(), 1000);
+  }
+  componentWillUnmount() {
+    clearInterval(this.intervalID);
+  }
+  tick() {
+    this.setState({
+      time: new Date().toLocaleString(navigator.language, {
+        hour: "2-digit",
+        minute: "2-digit",
+      }),
+    });
+  }
+
+  render() {
+    return <p className="App-clock">{this.state.time}</p>;
+  }
 }
 
-export default Hour;
+export default Clock;

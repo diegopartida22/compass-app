@@ -7,7 +7,7 @@
 .schedule label {
   padding-left: 2vh;
   font-weight: 500;
-  font-size: 3vh;
+  font-size: 2vh;
   line-height: 2vh;
 }
 
@@ -19,14 +19,19 @@
 
 .schedule li {
   position: relative;
-  width: 19vh;
+  width: 25vh;
   height: 4vh;
-  left: 33vh;
-  margin-left: 1vh;
+  left: 13vh;
+  margin-left: 0.5vh;
   display: flex;
   align-items: center;
   box-shadow: 0px 4px 24px rgba(168, 168, 168, 0.25);
   border-radius: 9px 9px 0px 0px;
+  transition: 0.3s;
+}
+
+.schedule li:hover {
+  padding-top: 5px;
 }
 
 .schedule li:nth-child(1) {
@@ -55,4 +60,28 @@
 
 .schedule li:nth-child(7) {
   background: rgba(255, 0, 36, 0.5);
+}
+
+.time {
+  position: relative;
+  width: 7vw;
+  height: 10vh;
+  left: 6vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+
+  border-radius: 10px;
+
+  background: #ffffff;
+  box-shadow: 0px 4px 24px rgba(168, 168, 168, 0.25);
+}
+
+.time ul {
+  list-style: none;
+  flex-direction: column;
+
+  padding: 0;
+  margin: 0;
 }

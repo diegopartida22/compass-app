@@ -75,13 +75,13 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 9vh;
-  height: 4vh;
+  width: 10vh;
+  height: 5vh;
   margin-top: 3vh;
   margin-left: 2vh;
 
-  top: -24.5vh;
-  left: 162vh;
+  top: -22.5vh;
+  left: 185vh;
 
   background: #3b3e45;
   border-radius: 100px;

@@ -72,7 +72,7 @@
 
 /* Styles for each day */
 
-.monday h2 {
+.mondayItem h2 {
   border: 1vh solid #ff0024;
 
   border-right: #ffffff;
@@ -80,11 +80,11 @@
   border-top: #ffffff;
 }
 
-.monday label {
+.mondayItem label {
   background: #ff0024;
 }
 
-.tuesday h2 {
+.tuesdayItem h2 {
   border: 1vh solid #ff8000;
 
   border-right: #ffffff;
@@ -92,11 +92,11 @@
   border-top: #ffffff;
 }
 
-.tuesday label {
+.tuesdayItem label {
   background: #ff8000;
 }
 
-.wednesday h2 {
+.wednesdayItem h2 {
   border: 1vh solid #ffbf00;
 
   border-right: #ffffff;
@@ -104,11 +104,11 @@
   border-top: #ffffff;
 }
 
-.wednesday label {
+.wednesdayItem label {
   background: #ffbf00;
 }
 
-.thursday h2 {
+.thursdayItem h2 {
   border: 1vh solid rgba(255, 0, 36, 0.7);
 
   border-right: #ffffff;
@@ -116,11 +116,11 @@
   border-top: #ffffff;
 }
 
-.thursday label {
+.thursdayItem label {
   background: rgba(255, 0, 36, 0.7);
 }
 
-.friday h2 {
+.fridayItem h2 {
   border: 1vh solid rgba(255, 128, 0, 0.7);
 
   border-right: #ffffff;
@@ -128,11 +128,11 @@
   border-top: #ffffff;
 }
 
-.friday label {
+.fridayItem label {
   background: rgba(255, 128, 0, 0.7);
 }
 
-.saturday h2 {
+.saturdayItem h2 {
   border: 1vh solid rgba(255, 206, 0, 0.7);
 
   border-right: #ffffff;
@@ -140,11 +140,11 @@
   border-top: #ffffff;
 }
 
-.saturday label {
+.saturdayItem label {
   background: rgba(255, 206, 0, 0.7);
 }
 
-.sunday h2 {
+.sundayItem h2 {
   border: 1vh solid rgba(255, 0, 36, 0.5);
 
   border-right: #ffffff;
@@ -152,6 +152,6 @@
   border-top: #ffffff;
 }
 
-.sunday label {
+.sundayItem label {
   background: rgba(255, 0, 36, 0.5);
 }

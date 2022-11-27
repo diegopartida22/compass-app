@@ -3,7 +3,7 @@ import React from "react";
 import Day from "../Elements/Day";
 import styles from "./Header.module.css";
 import Hour from "../Elements/Hour";
-import Weather from "../Elements/Weather";
+// import Weather from "../Elements/Weather";
 
 // create a header component
 

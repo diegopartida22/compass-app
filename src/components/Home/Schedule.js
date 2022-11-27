@@ -52,6 +52,7 @@ function Schedule(props) {
           </ul>
         </div>
       </div>
+
       <Tasks items={tasks} day={day} />
     </>
   );

@@ -12,37 +12,41 @@
   justify-content: center;
 
   width: 16vw;
-  height: 8vh;
+  height: 10vh;
   left: 2vw;
+
+  font-size: 2vh;
+  font-weight: 500;
+  line-height: 2vh;
 
   background: linear-gradient(
     112.83deg,
     rgba(228, 240, 248, 0.42) 0%,
     rgba(255, 255, 255, 0.336) 110.84%
   );
-  border: 1px solid #ffffff;
+  border: 2px solid #ffffff;
+
   box-shadow: 0px 2px 5.5px rgba(0, 0, 0, 0.02);
   backdrop-filter: blur(10.5px);
-  /* Note: backdrop-filter has minimal browser support */
 
-  border-radius: 15px;
+  border-radius: 1vh;
 }
 
 .time label {
   display: flex;
   position: relative;
-  width: 7vw;
-  height: 12vh;
-  left: 1vh;
+  width: 5vw;
+  height: 10vh;
+  top: 0.5vh;
 
   align-items: center;
   text-align: center;
   justify-content: center;
 
-  border-radius: 10px;
+  border-radius: 1vh;
 
   background: #ffffff;
-  box-shadow: 0px 4px 24px rgba(168, 168, 168, 0.25);
+  box-shadow: 0px 4px 24px rgba(80, 79, 79, 0.25);
 }
 
 .time ul {
@@ -55,8 +59,99 @@
 .time li {
   display: flex;
 
-  width: 2wh;
-  height: 2vh;
+  width: 7vw;
+  height: 12vh;
+
+  align-items: center;
+  text-align: center;
+
+  margin-top: 0.2vh;
 
   border-radius: 10px;
+}
+
+/* Styles for each day */
+
+.monday h2 {
+  border: 1vh solid #ff0024;
+
+  border-right: #ffffff;
+  border-bottom: #ffffff;
+  border-top: #ffffff;
+}
+
+.monday label {
+  background: #ff0024;
+}
+
+.tuesday h2 {
+  border: 1vh solid #ff8000;
+
+  border-right: #ffffff;
+  border-bottom: #ffffff;
+  border-top: #ffffff;
+}
+
+.tuesday label {
+  background: #ff8000;
+}
+
+.wednesday h2 {
+  border: 1vh solid #ffbf00;
+
+  border-right: #ffffff;
+  border-bottom: #ffffff;
+  border-top: #ffffff;
+}
+
+.wednesday label {
+  background: #ffbf00;
+}
+
+.thursday h2 {
+  border: 1vh solid rgba(255, 0, 36, 0.7);
+
+  border-right: #ffffff;
+  border-bottom: #ffffff;
+  border-top: #ffffff;
+}
+
+.thursday label {
+  background: rgba(255, 0, 36, 0.7);
+}
+
+.friday h2 {
+  border: 1vh solid rgba(255, 128, 0, 0.7);
+
+  border-right: #ffffff;
+  border-bottom: #ffffff;
+  border-top: #ffffff;
+}
+
+.friday label {
+  background: rgba(255, 128, 0, 0.7);
+}
+
+.saturday h2 {
+  border: 1vh solid rgba(255, 206, 0, 0.7);
+
+  border-right: #ffffff;
+  border-bottom: #ffffff;
+  border-top: #ffffff;
+}
+
+.saturday label {
+  background: rgba(255, 206, 0, 0.7);
+}
+
+.sunday h2 {
+  border: 1vh solid rgba(255, 0, 36, 0.5);
+
+  border-right: #ffffff;
+  border-bottom: #ffffff;
+  border-top: #ffffff;
+}
+
+.sunday label {
+  background: rgba(255, 0, 36, 0.5);
 }

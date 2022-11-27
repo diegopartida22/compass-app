@@ -21,7 +21,7 @@
   position: relative;
   width: 22vh;
   height: 4vh;
-  left: 15vh;
+  left: 16vh;
   margin-left: 0.5vh;
   display: flex;
   align-items: center;
@@ -64,9 +64,9 @@
 
 .time {
   position: relative;
-  width: 7vw;
-  height: 12vh;
-  left: 6vh;
+  width: 5vw;
+  height: 10vh;
+  left: 2vw;
   display: flex;
   align-items: center;
   text-align: center;

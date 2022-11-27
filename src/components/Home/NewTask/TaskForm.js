@@ -70,32 +70,49 @@ function TaskForm(props) {
     setTask("");
   };
 
+  // deleta all
+  const deleteHandler = (event) => {
+    event.preventDefault();
+    props.onDeleteAll();
+
+    setDay(enteredDay);
+    setHour(enteredHour);
+    setTask("");
+  };
+
   return (
     <Fragment>
       <form onSubmit={submitHandler}>
-      <div className={styles.task}>
-        <input type="text" value={enteredTask} onChange={taskChangeHandler} placeholder="Task or issue" />
+        <div className={styles.task}>
+          <input
+            type="text"
+            value={enteredTask}
+            onChange={taskChangeHandler}
+            placeholder="Task or issue"
+          />
 
-        <select onChange={dayChangeHandler}>
-          {days.map((day) => (
-            <option key={day} value={day}>
-              {day}
-            </option>
-          ))}
-        </select>
+          <select onChange={dayChangeHandler}>
+            {days.map((day) => (
+              <option key={day} value={day}>
+                {day}
+              </option>
+            ))}
+          </select>
 
-        <select onChange={hourChangeHandler}>
-          {hours.map((hour) => (
-            <option key={hour} value={hour}>
-              {hour}
-            </option>
-          ))}
-        </select>
+          <select onChange={hourChangeHandler}>
+            {hours.map((hour) => (
+              <option key={hour} value={hour}>
+                {hour}
+              </option>
+            ))}
+          </select>
 
-        <button type="submit">+ Add Task</button>
+          <button type="submit">+ Add Task</button>
 
-        <button type="submit">- Delete All</button>
-      </div>
+          <button type="button" onClick={deleteHandler}>
+            - Delete All
+          </button>
+        </div>
       </form>
     </Fragment>
   );

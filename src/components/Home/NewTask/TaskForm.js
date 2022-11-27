@@ -70,14 +70,11 @@ function TaskForm(props) {
     setTask("");
   };
 
-  // deleta all
-  const deleteHandler = (event) => {
+  // deleta all tasks
+
+  const deleteAllHandler = (event) => {
     event.preventDefault();
     props.onDeleteAll();
-
-    setDay(enteredDay);
-    setHour(enteredHour);
-    setTask("");
   };
 
   return (
@@ -109,9 +106,7 @@ function TaskForm(props) {
 
           <button type="submit">+ Add Task</button>
 
-          <button type="button" onClick={deleteHandler}>
-            - Delete All
-          </button>
+          <button onClick={deleteAllHandler}>- Delete All</button>
         </div>
       </form>
     </Fragment>

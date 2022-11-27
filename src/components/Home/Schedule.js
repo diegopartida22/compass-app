@@ -12,7 +12,7 @@ function Schedule(props) {
     });
   };
 
-  const [day, setDay] = useState("");
+  const [day, setDay] = useState("Monday");
 
   return (
     <>
@@ -44,7 +44,7 @@ function Schedule(props) {
           </ul>
         </div>
 
-        <div className={styles.time}>
+        <div className={styles.timeSchedule}>
           <ul>
             <li>
               <label>Time</label>

@@ -1,9 +1,19 @@
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
 .task h2 {
+  display: flex;
   position: relative;
-  width: 512px;
-  height: 85px;
-  left: 126px;
-  top: 360px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+
+  width: 16vw;
+  height: 8vh;
+  left: 2vw;
 
   background: linear-gradient(
     112.83deg,
@@ -18,12 +28,13 @@
   border-radius: 15px;
 }
 
-.task label {
+.time label {
+  display: flex;
   position: relative;
   width: 7vw;
-  height: 10vh;
-  left: 2vh;
-  display: flex;
+  height: 12vh;
+  left: 1vh;
+
   align-items: center;
   text-align: center;
   justify-content: center;
@@ -35,8 +46,17 @@
 }
 
 .time ul {
+  display: flex;
   list-style: none;
   flex-direction: column;
   padding: 0;
-  margin: 0;
+}
+
+.time li {
+  display: flex;
+
+  width: 2wh;
+  height: 2vh;
+
+  border-radius: 10px;
 }

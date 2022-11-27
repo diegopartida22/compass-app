@@ -137,6 +137,8 @@
 
 .register p:hover {
   color: wheat;
+
+  cursor: pointer;
 }
 
 .alert {

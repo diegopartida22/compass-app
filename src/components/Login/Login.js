@@ -29,7 +29,7 @@ function Login() {
   };
 
   const handleClick = () => {
-    setRegister(!register);
+    window.location.reload();
   };
 
   return (

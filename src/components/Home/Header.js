@@ -1,12 +1,17 @@
 import React from "react";
 // import Hour from "../Date/Hour";
-import Day from "../Date/Day";
+import Day from "../Elements/Day";
 import styles from "./Header.module.css";
-import Hour from "../Date/Hour";
+import Hour from "../Elements/Hour";
+import Weather from "../Elements/Weather";
 
 // create a header component
 
 function Header() {
+  const logoutHandler = () => {
+    window.location.reload();
+  };
+
   return (
     <header className={styles.header}>
       <div>
@@ -25,9 +30,12 @@ function Header() {
           <div className={styles.date}>
             <Day />
           </div>
+          {/* <div>
+            <Weather />
+          </div> */}
         </div>
         <div className={styles.logout}>
-          <button>Logout</button>
+          <button onClick={logoutHandler}>Logout</button>
         </div>
       </div>
     </header>

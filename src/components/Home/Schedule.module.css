@@ -19,9 +19,9 @@
 
 .schedule li {
   position: relative;
-  width: 25vh;
+  width: 22vh;
   height: 4vh;
-  left: 13vh;
+  left: 15vh;
   margin-left: 0.5vh;
   display: flex;
   align-items: center;
@@ -65,7 +65,7 @@
 .time {
   position: relative;
   width: 7vw;
-  height: 10vh;
+  height: 12vh;
   left: 6vh;
   display: flex;
   align-items: center;

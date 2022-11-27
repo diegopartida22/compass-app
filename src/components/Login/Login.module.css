@@ -70,6 +70,11 @@
   text-decoration: underline;
 }
 
+.login p:nth-child(5):hover {
+  color: wheat;
+  cursor: pointer;
+}
+
 .login input {
   box-sizing: border-box;
 

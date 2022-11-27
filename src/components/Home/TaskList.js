@@ -13,7 +13,7 @@ function TaskList(props) {
   }
 
   return (
-    <div className={styles.taskList}>
+    <div>
       <ul>
         {props.items.map((task) => (
           <TaskItem
